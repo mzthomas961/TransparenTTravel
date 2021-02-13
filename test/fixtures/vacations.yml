@@ -2,12 +2,18 @@
 
 one:
   date: MyString
-  hotel: one
+  destination: MyString
+  hotel_price: MyString
+  airline_price: MyString
   airline: one
   client: one
+  hotel: one
 
 two:
   date: MyString
-  hotel: two
+  destination: MyString
+  hotel_price: MyString
+  airline_price: MyString
   airline: two
   client: two
+  hotel: two

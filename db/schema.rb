@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_12_174225) do
+ActiveRecord::Schema.define(version: 2021_02_13_155823) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,7 +23,6 @@ ActiveRecord::Schema.define(version: 2021_02_12_174225) do
 
   create_table "airlines", force: :cascade do |t|
     t.string "name"
-    t.integer "price"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -38,7 +37,6 @@ ActiveRecord::Schema.define(version: 2021_02_12_174225) do
   end
 
   create_table "hotels", force: :cascade do |t|
-    t.integer "price"
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -46,9 +44,12 @@ ActiveRecord::Schema.define(version: 2021_02_12_174225) do
 
   create_table "vacations", force: :cascade do |t|
     t.string "date"
-    t.bigint "hotel_id", null: false
+    t.string "destination"
+    t.string "hotel_price"
+    t.string "airline_price"
     t.bigint "airline_id", null: false
     t.bigint "client_id", null: false
+    t.bigint "hotel_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["airline_id"], name: "index_vacations_on_airline_id"
