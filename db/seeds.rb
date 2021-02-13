@@ -30,7 +30,7 @@ double_tree =Hotel.create(name: "The DoubleTree Hotel")
 ballys =Hotel.create(name: "Ballys Hotel")
 hardrock =Hotel.create(name: "The Hardrock Hotel")
 ritz_carlton =Hotel.create(name: "The Ritz Carlton")
-caesars_palace =Hotel.create(name: "The caesars Palace")
+caesars_palace =Hotel.create(name: "The Caesars Palace")
 
 
 ####Airlines data########

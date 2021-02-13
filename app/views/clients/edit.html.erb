@@ -1,0 +1,15 @@
+<h1> Edit a client </h1>
+
+ <%= form_for @client do |f| %>
+    <%f.label :agent_id %>
+    <%=f.collection_select :agent_id, Agent.all, :id, :name%>
+    <%= f.label :name %>
+    <%=f.text_field :name %>
+    <%=f.label :age %>
+    <%=f.number_field :age %>
+    <%= f.submit %> 
+    <% end %>
+<p>
+
+</p>
+<%=button_to "Back to client list", clients_path, method: 'get' %>

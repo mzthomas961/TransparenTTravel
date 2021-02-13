@@ -1,0 +1,12 @@
+<h1> Client Info </h1>
+
+<p><b>Name</b> - <%= @client.name%></p>
+<p><b>Age</b> - <%= @client.age%></p>
+
+<%=button_to "Edit Client", edit_client_path, method: 'get' %>
+<%= button_to "Delete Client","/clients/#{@client.id}", method: 'delete' %>
+
+
+<h1> List of vacations </h1>
+
+<%=button_to "Back to client list", clients_path, method: 'get' %>
