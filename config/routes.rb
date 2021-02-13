@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :vacations
-  resources :airlines
+  # resources :airlines
   # resources :hotels
   # resources :clients
   resources :agents
@@ -14,6 +14,9 @@ Rails.application.routes.draw do
   delete "/clients/:id", to: "clients#destroy"
 
   get "/hotels", to: "hotels#index", as: "hotels"
+
+  get "/airlines", to: "airlines#index", as: "airlines"
+
   
   
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
