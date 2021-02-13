@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   resources :vacations
   resources :airlines
   resources :hotels
-  resources :clients
+  # resources :clients
   resources :agents
+
+  get "/clients", to:"clients#index", as: "clients"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
