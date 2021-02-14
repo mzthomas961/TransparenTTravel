@@ -1,10 +1,12 @@
 <h1> All Airlines </h1>
-<ul>
 
-<% @airlines.each do |airline| %>
-   <li>
-    <p> <strong> Name:</strong>  <%= airline.name%> </p>
-  </li>
-    <%end%>
-
-   </ul>
+<p> <strong> Airline:</strong> <a href="https://www.delta.com/"> <%= @airlines[0].name%>  </p> </a> 
+<p> <strong> Airline:</strong>  <a href="https://www.aa.com/homePage.do"> <%= @airlines[1].name%>  </p> </a>
+<p> <strong> Airline:</strong>  <a href="https://www.jetblue.com/"><%= @airlines[2].name%>  </p> </a>
+<p> <strong> Airline:</strong>  <a href="https://www.spirit.com/"> <%= @airlines[3].name%> </p> </a>
+<p> <strong> Airline:</strong>  <a href="https://www.united.com/en/us"><%= @airlines[4].name%> </p> </a>
+<p> <strong> Airline:</strong>  <a href="https://www.southwest.com/"> <%= @airlines[5].name%> </p> </a>
+<p> <strong> Airline:</strong>  <a href="https://www.flyfrontier.com/"><%= @airlines[6].name%> </p> </a>
+<p> <strong> Airline:</strong>  <a href="https://www.virginatlantic.com/us/en"><%= @airlines[7].name%> </p> </a>
+   
+<%=button_to "Back" , clients_path, method: "get"%>
