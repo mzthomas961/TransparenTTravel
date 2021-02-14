@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :vacations
   # resources :airlines
   # resources :hotels
   # resources :clients
@@ -16,6 +15,12 @@ Rails.application.routes.draw do
   get "/hotels", to: "hotels#index", as: "hotels"
 
   get "/airlines", to: "airlines#index", as: "airlines"
+
+  get "/vacations/new", to: "vacations#new", as: "new_vacation"
+  post "/vacations", to: "vacations#create"
+  get "vacations/:id", to:"vacations#show", as: "vacation"
+  get "/vacations/:id/edit", to: "vacations#edit", as: "edit_vacation"
+  patch "/vacations/:id", to: "vacations#update"
 
   
   

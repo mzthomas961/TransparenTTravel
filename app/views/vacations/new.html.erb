@@ -1,0 +1,20 @@
+<h1> Create a new vacation </h1>
+
+  <%= form_for @vacation do |f| %>
+    <%= f.label :client_id %>
+    <%=f.collection_select :client_id, Client.all, :id, :name%>
+    <%=f.label :hotel_id %>
+    <%=f.collection_select :hotel_id, Hotel.all, :id, :name %>
+    <%=f.label :airline_id %>
+    <%= f.collection_select :airline_id, Airline.all, :id, :name%>
+    <%= f.label :date%>
+    <%=f.text_field :date %>
+    <%= f.label :destination%>
+    <%=f.text_field :destination %>
+    <%= f.label :airline_price%>
+    <%= f.text_field :airline_price%>
+    <%= f.label :hotel_price%>
+    <%= f.text_field :hotel_price%>
+    <%= f.submit%>
+    <% end %>
+

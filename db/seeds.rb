@@ -21,7 +21,7 @@ chase = Client.create(name: "Chase", age: 36, agent_id: 2 )
 #########Hotel data#######
 marriott =Hotel.create(name: "The Marriott Inn")
 hilton =Hotel.create(name: "The Hilton")
-ramada =Hotel.create(name: "The Ramda Inn")
+ramada =Hotel.create(name: "The Ramada Inn")
 trump =Hotel.create(name: "Trump Towers")
 four_seasons =Hotel.create(name: "The Four Seasons Hotel")
 quality_inn =Hotel.create(name: "Quality Inn")
