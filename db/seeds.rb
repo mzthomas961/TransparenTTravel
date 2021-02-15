@@ -1,9 +1,9 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
+# This file should contain all record creation needed to seed database with its default values.
+# data can  be loaded with bin/rails db:seed command (or created alongside database with db:setup).
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
@@ -19,18 +19,18 @@ chase = Client.create(name: "Chase", age: 36, agent_id: 2 )
 
 
 #########Hotel data#######
-marriott =Hotel.create(name: "The Marriott Inn")
+marriott =Hotel.create(name: "Marriott Inn")
 hilton =Hotel.create(name: "The Hilton")
-ramada =Hotel.create(name: "The Ramada Inn")
+ramada =Hotel.create(name: "Ramada Inn")
 trump =Hotel.create(name: "Trump Towers")
-four_seasons =Hotel.create(name: "The Four Seasons Hotel")
+four_seasons =Hotel.create(name: "The Four Seasons")
 quality_inn =Hotel.create(name: "Quality Inn")
 super_8 =Hotel.create(name: "Super 8 Motel")
-double_tree =Hotel.create(name: "The DoubleTree Hotel")
+double_tree =Hotel.create(name: "DoubleTree Hotel")
 ballys =Hotel.create(name: "Ballys Hotel")
-hardrock =Hotel.create(name: "The Hardrock Hotel")
+hardrock =Hotel.create(name: "Hardrock Hotel")
 ritz_carlton =Hotel.create(name: "The Ritz Carlton")
-caesars_palace =Hotel.create(name: "The Caesars Palace")
+caesars_palace =Hotel.create(name: "Caesars Palace")
 
 
 ####Airlines data########
@@ -52,3 +52,4 @@ v2= Vacation.create(hotel_id: 4, client_id: 2, airline_id: 5, destination: "Domi
 
 
 puts "!!!!!!!!!"
+
