@@ -1,3 +1,5 @@
+
+
 # This file should contain all record creation needed to seed database with its default values.
 # data can  be loaded with bin/rails db:seed command (or created alongside database with db:setup).
 #
@@ -44,12 +46,11 @@ frontier =Airline.create(name:"Frontier Airlines")
 virgin_atlantic =Airline.create(name:"Virgin Atlantic")
 
 #####vacation data######
-v1= Vacation.create(hotel_id: 1, client_id: 1, airline_id: 1, destination: "Egypt", date: "07/07/2021", airline_price: "$700", hotel_price: "$200")
-v2= Vacation.create(hotel_id: 4, client_id: 2, airline_id: 5, destination: "Dominican Republic", date: "06/10/2021", airline_price: "$500", hotel_price: "$250")
+v1= Vacation.create(hotel_id: 1, client_id: 1, airline_id: 1, destination: "Egypt", date: "07/07/2021", airline_price: 700, hotel_price: 200)
+v2= Vacation.create(hotel_id: 4, client_id: 2, airline_id: 5, destination: "Dominican Republic", date: "06/10/2021", airline_price: 500, hotel_price: 250)
 
 
 
 
 
 puts "!!!!!!!!!"
-

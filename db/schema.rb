@@ -45,8 +45,8 @@ ActiveRecord::Schema.define(version: 2021_02_13_155823) do
   create_table "vacations", force: :cascade do |t|
     t.string "date"
     t.string "destination"
-    t.string "hotel_price"
-    t.string "airline_price"
+    t.float "hotel_price"
+    t.float "airline_price"
     t.bigint "airline_id", null: false
     t.bigint "client_id", null: false
     t.bigint "hotel_id", null: false

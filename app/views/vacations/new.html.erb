@@ -12,9 +12,9 @@
     <%= f.label :destination%>
     <%=f.text_field :destination %>
     <%= f.label :airline_price%>
-    <%= f.text_field :airline_price%>
-    <%= f.label :hotel_price%>
-    <%= f.text_field :hotel_price%>
+  <%= f.number_field :airline_price, :step => 0.01 %>
+   <%= f.label :hotel_price%>
+    <%= f.number_field :hotel_price, :step => 0.01 %>
     <%= f.submit%>
     <% end %>
     <%=button_to "Back to clients", clients_path, method: 'get' %>
