@@ -1,10 +1,11 @@
 <h1> Vacation Information </h1>
-
+<%@vacation.discount%>
 <p> Destination: <%= @vacation.destination %></p>
 <p> Date: <%= @vacation.date %> </p>
 <p> Hotel: <%= @vacation.hotel.name %> - $<%= @vacation.hotel_price %></p>
 <p> Airline: <%= @vacation.airline.name %> - $<%= @vacation.airline_price %></p>
 <p> Total Price: $<%= @vacation.total_price %>
+<p><b>ALL CLIENTS ABOVE THE AGE OF 65 RECIEVE A 10% DISCOUNT ON TOTALPRICE!</b><p>
 
 <%= button_to "Edit vacation", edit_vacation_path(@vacation), method: 'get' %>
 <%=button_to "Back to client", client_path(@vacation.client_id), method: 'get' %>
