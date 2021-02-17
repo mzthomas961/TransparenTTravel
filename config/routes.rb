@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   # resources :clients
   resources :agents
 
+  root to:"agents#login"
+  post "/handle_login", to: "agents#handle_login"
+
   get "/clients", to:"clients#index", as: "clients"
   get "/clients/new", to: "clients#new", as: "new_client"
   post "/clients", to: "clients#create"

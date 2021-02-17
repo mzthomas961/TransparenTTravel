@@ -9,9 +9,8 @@
 
 
 #######Agent data######
-mike = Agent.create(name:"Mike")
-matt = Agent.create(name:"Matt")
-
+mike = Agent.create(name:"Mike", password:"abc123", username:"mike123")
+matt = Agent.create(name:"Matt", password:"abc456", username:"matt123")
 
 ########Client data######
 eric = Client.create(name: "Eric", age: 30, agent_id: 1)

@@ -1,5 +1,6 @@
 class Agent < ApplicationRecord
     has_many :clients 
+    has_secure_password
 
     def reach_bonus
         if self.clients.size >= 3
