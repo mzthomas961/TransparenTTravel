@@ -1,7 +1,15 @@
+<%if flash[:errors]%>
+<%flash[:errors].each do |message|%>
+<p><b><%=message%></b></p>
+<%end%>
+<%end%>
+
+
 <%= form_tag "/handle_login" do%>
-<%= label_tag :user, "Enter your username"%>
-<%= text_field_tag :user%>
+<%= label_tag :username, "Enter your username"%>
+<%= text_field_tag :username%>
 <%= label_tag :password, "Enter your password"%>
 <%= password_field_tag :password%>
 <%= submit_tag "Login"%>
 <%end%>
+<%= button_to "Signup", new_agent_path, method: "get"%>

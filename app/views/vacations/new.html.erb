@@ -1,8 +1,8 @@
 <h1> Create a new vacation </h1>
 
   <%= form_for @vacation do |f| %>
-    <%= f.label :client_id %>
-    <%=f.collection_select :client_id, Client.all, :id, :name%>
+   <%=f.label :client_id %>
+    <%=f.collection_select :client_id, Client.all, :id, :name %>
     <%=f.label :hotel_id %>
     <%=f.collection_select :hotel_id, Hotel.all, :id, :name %>
     <%=f.label :airline_id %>
@@ -18,3 +18,4 @@
     <%= f.submit%>
     <% end %>
     <%=button_to "Back to clients", clients_path, method: 'get' %>
+    <%= button_to "Logout", logout_path, method: "delete"%> 

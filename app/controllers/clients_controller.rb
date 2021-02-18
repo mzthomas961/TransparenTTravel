@@ -14,7 +14,7 @@ class ClientsController < ApplicationController
     end
 
     def create 
-        @client= Client.create(client_params)
+        @client= @current_agent.clients.create(client_params)
         redirect_to client_path (@client)
     end
 
@@ -37,7 +37,7 @@ class ClientsController < ApplicationController
 
     private
     def client_params
-    params.require(:client).permit(:name, :age, :agent_id)
+    params.require(:client).permit(:name, :age)
     end
 
 

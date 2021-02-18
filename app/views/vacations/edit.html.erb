@@ -1,8 +1,8 @@
 <h1> Edit a vacation </h1>
 
   <%= form_for @vacation do |f| %>
-    <%= f.label :client_id %>
-    <%=f.collection_select :client_id, Client.all, :id, :name%>
+  <%=f.label :client_id %>
+    <%=f.collection_select :client_id, Client.all, :id, :name %>
     <%=f.label :hotel_id %>
     <%=f.collection_select :hotel_id, Hotel.all, :id, :name %>
     <%=f.label :airline_id %>
@@ -19,4 +19,4 @@
     <% end %>
 
     <%=button_to "Back ", vacation_path(@vacation), method: 'get' %>
-
+<%= button_to "Logout", logout_path, method: "delete"%> 

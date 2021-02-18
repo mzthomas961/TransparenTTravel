@@ -27,6 +27,6 @@ class VacationsController < ApplicationController
    private
 
    def vacation_params
-      params.require(:vacation).permit(:date, :destination, :hotel_price, :airline_price,:client_id, :airline_id, :hotel_id)
+      params.require(:vacation).permit(:date, :destination, :hotel_price, :airline_price, :airline_id, :hotel_id, :client_id)
    end
 end

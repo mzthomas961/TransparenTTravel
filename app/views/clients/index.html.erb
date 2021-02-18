@@ -1,15 +1,21 @@
 <h1> All Clients </h1>
+<p><b><%= current_agent.reach_bonus%></b></p>
+
 <ul>
 
+
 <% @clients.each do |client| %>
+<%if current_agent.id == client.agent_id%>
    <li>
     <p> <strong> Name: <%= link_to client.name, client_path(client) %> </strong> </p>
   </li>
     <%end%>
+    <%end%>
+   
 
    </ul>
 <%=button_to "Add Client" , new_client_path, method: "get"%>       
 <%=button_to "Find Flight" , airlines_path, method: "get"%> 
 <%=button_to "Find Hotel" , hotels_path, method: "get"%> 
-
+<%= button_to "Logout", logout_path, method: "delete"%> 
 

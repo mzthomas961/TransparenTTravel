@@ -10,11 +10,14 @@
 
 #######Agent data######
 mike = Agent.create(name:"Mike", password:"abc123", username:"mike123")
-matt = Agent.create(name:"Matt", password:"abc456", username:"matt123")
+
 
 ########Client data######
-eric = Client.create(name: "Eric", age: 30, agent_id: 1)
-chase = Client.create(name: "Chase", age: 36, agent_id: 2 )
+carmelo = Client.create(name: "Carmelo Anthony", age: 36, agent_id: 1)
+shaq = Client.create(name: "Shaquille O'neal", age: 48, agent_id: 1)
+lebron = Client.create(name: "LeBron James", age: 36, agent_id: 1)
+magic = Client.create(name: "Magic Johnson", age: 61, agent_id: 1)
+penny = Client.create(name: "Penny Hardaway", age: 49, agent_id: 1)
 
 
 #########Hotel data#######
@@ -44,6 +47,9 @@ virgin_atlantic =Airline.create(name:"Virgin Atlantic")
 
 #####vacation data######
 v1= Vacation.create(hotel_id: 1, client_id: 1, airline_id: 1, destination: "Egypt", date: "07/07/2021", airline_price: 700.39, hotel_price: 200.78)
-v2= Vacation.create(hotel_id: 4, client_id: 2, airline_id: 5, destination: "Dominican Republic", date: "06/10/2021", airline_price: 500.13, hotel_price: 250.56)
+v2= Vacation.create(hotel_id: 4, client_id: 1, airline_id: 5, destination: "Dominican Republic", date: "06/10/2021", airline_price: 500.13, hotel_price: 250.56)
+v3= Vacation.create(hotel_id: 3, client_id: 1, airline_id: 2, destination: "Brazil", date: "08/10/2022", airline_price: 800.95, hotel_price: 301.78)
+v4= Vacation.create(hotel_id: 5, client_id: 1, airline_id: 3, destination: "Dubai", date: "06/13/2022", airline_price: 456.39, hotel_price: 2564.78)
+
 
 puts "!!!SEEDED!!!!"
